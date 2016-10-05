@@ -22,8 +22,8 @@ body
 {
   width: 1000px;
   margin: 0px auto;
-  padding: 5% 0% 8% 0%;
-  font-size: 38px;
+  padding: 5% 0% 11% 0%;
+  font-size: 36px;
 }
 
 #welcome, #task-header
@@ -33,7 +33,7 @@ body
 
 .heading
 {
-  padding: 3% 0% 0% 0%;
+  margin-left: -12%;
 }
 
 .navbar, .navbar li a
@@ -48,10 +48,6 @@ body
   background-color: transparent;
 }
 
-.navbar-nav > li{
-  margin-left:50px;
-  margin-right:50px;
-}
 
 #wrapper-menu
 {
