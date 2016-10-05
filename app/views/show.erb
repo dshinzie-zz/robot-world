@@ -1,0 +1,33 @@
+<div class="wrapper-task">
+  <div class="">
+    <h1 id="task-title"><%= @robot.name %></h1>
+  </div>
+
+  <div class="wrapper-edit">
+
+    <img src="https://robohash.org/<%= @robot.id %>.png?set=set2" class="robot-show">
+
+    <div class='form-inline'>
+      <div class='form-group'>
+        <label for='robot-city'>City:</label>
+        <input type="text" name='robot[city]' value="<%= @robot.city %>"  id='robot-city' class='form-control read-only' readonly="readonly"/>
+      </div>
+    </div><br/>
+
+    <div class='form-inline'>
+      <div class='form-group'>
+        <label for='robot-state'>State:</label>
+        <input type="text" name='robot[state]' value="<%= @robot.state %>"  id='robot-state' class='form-control read-only' readonly/>
+      </div>
+    </div><br/>
+
+    <div class='form-inline'>
+      <div class='form-group'>
+        <label for='robot-dept'>Department:</label>
+        <input type="text" name='robot[department]' value="<%= @robot.department %>"  id='robot-dept' class='form-control read-only' readonly/>
+      </div>
+    </div><br/>
+    </div>
+
+  <a class="back" href="/robots"><<</a>
+</div>

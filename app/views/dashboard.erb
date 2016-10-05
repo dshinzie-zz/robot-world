@@ -1,0 +1,57 @@
+
+<div class="row heading">
+  <div class="col-md-6 col-md-offset-3">
+    <ul class="nav navbar navbar-nav">
+      <li><a href="/robots">Robot Index</a></li>
+      <li><a href="/robots/new">New Robot</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1 id="welcome">Welcome to Robot World</h1>
+  </div>
+</div>
+
+<section class="stats">
+  <div class="col-md-6">
+      <p id="total"><strong>Total Robots:  <%= @total %></strong></p>
+  </div></br></br>
+
+  <div class="col-md-3">
+    <table class="stats-table">
+        <tr><th>City</th><th>Total</th></tr>
+        <% @city.each do |key, value| %>
+        <tr>
+          <td><%= key %></td>
+          <td><%= value %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+  <div class="col-md-3">
+    <table class="stats-table">
+        <tr><th>State</th><th>Total</th></tr>
+        <% @state.each do |key, value| %>
+        <tr>
+          <td><%= key %></td>
+          <td><%= value %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+  <div class="col-md-3">
+    <table class="stats-table">
+        <tr><th>Department</th><th>Total</th></tr>
+        <% @department.each do |key, value| %>
+        <tr>
+          <td><%= key %></td>
+          <td><%= value %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</section

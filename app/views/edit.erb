@@ -1,0 +1,40 @@
+<div class="wrapper-task">
+  <form action="/robots/<%= @robot.id %>" method="post">
+    <p class="enter-task">Edit robot</p>
+    <input type="hidden" name="_method" value="PUT" id='robot-hidden'/>
+
+    <div class="wrapper-edit">
+      <div class='form-inline'>
+        <div class='form-group'>
+          <label for='robot-name'>Name:</label>
+          <input type="text" name='robot[name]' value="<%= @robot.name %>"  id='robot-name' class='form-control enter-info'/>
+        </div>
+      </div><br/>
+
+      <div class='form-inline'>
+        <div class='form-group'>
+          <label for='robot-city'>City:</label>
+          <input type="text" name='robot[city]' value="<%= @robot.city %>"  id='robot-city' class='form-control enter-info'/>
+        </div>
+      </div><br/>
+
+      <div class='form-inline'>
+        <div class='form-group'>
+          <label for='robot-state'>State:</label>
+          <input type="text" name='robot[state]' value="<%= @robot.state %>"  id='robot-state' class='form-control enter-info'/>
+        </div>
+      </div><br/>
+
+      <div class='form-inline'>
+        <div class='form-group'>
+          <label for='robot-dept'>Department:</label>
+          <input type="text" name='robot[department]' value="<%= @robot.department %>"  id='robot-dept' class='form-control enter-info'/>
+        </div>
+      </div><br/>
+      </div>
+
+    <input type='submit' class="enter-submit" value="Submit"/>
+  </form><br/><br/>
+
+  <a class="back" href="/robots"><<</a>
+</div>

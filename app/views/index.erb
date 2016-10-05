@@ -1,1 +1,23 @@
-<h1>My Robots</h1>
+<h1 id="task-header">My Robots</h1>
+
+<div class="wrapper-table">
+  <table id="task-table">
+    <caption class="back"><a href="/"><<</a></caption
+    <tr><th style="border-style:hidden;"></th><th>Robot</th><th>City State Dept.</th></tr>
+    <% @robots.each do |robot| %>
+      <tr>
+
+        <td style="border-style:hidden;"><img src="https://robohash.org/<%= robot.id %>.png?set=set2" class="robot"></td>
+
+        <td id="task-table-task"><a href="/robots/<%= robot.id %>"><%= robot.name %></a></td>
+
+        <td><a href="/robots/<%= robot.id %>/edit"><%= robot.city %>, <%= robot.state %>, <%= robot.department %></a></td>
+
+        <td style="border-style:hidden;"><form action="/robots/<%= robot.id %>" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="delete" class="delete"/>
+        </form></td>
+      </tr>
+      <% end %>
+  </table>
+</div>

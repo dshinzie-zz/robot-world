@@ -1,1 +1,254 @@
 
+/*Dashboard*/
+body
+{
+  font-family: Arial;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#welcome, #menu li a, #task-header, #enter-task
+{
+  letter-spacing: 0.20em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #3C3C3C;
+  outline: 0;
+}
+
+#welcome
+{
+  width: 1000px;
+  margin: 0px auto;
+  padding: 5% 0% 8% 0%;
+  font-size: 38px;
+}
+
+#welcome, #task-header
+{
+  text-align: center;
+}
+
+.heading
+{
+  padding: 3% 0% 0% 0%;
+}
+
+.navbar, .navbar li a
+{
+  font-size: 20px;
+  color: #3C3C3C;
+}
+
+.navbar li a:hover, #task-table td a:hover, .back a:hover
+{
+  color: #7EC0EE;
+  background-color: transparent;
+}
+
+.navbar-nav > li{
+  margin-left:50px;
+  margin-right:50px;
+}
+
+#wrapper-menu
+{
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+/*Tasks*/
+
+.wrapper-table
+{
+  padding: 0% 20% 0% 20%
+}
+
+#task-header
+{
+  margin: 0px auto;
+  padding: 5% 0% 3% 0%;
+  font-size: 40px;
+}
+
+#task-table
+{
+  border-collapse: separate;
+  margin: 0px auto;
+  border-spacing: 20px;
+}
+
+#task-table th, #task-table td {
+  border-bottom: 1px dotted black;
+  padding: 10px;
+  text-align: left;
+}
+
+#task-table th
+{
+  font-size: 26px;
+  font-family: "Georgia";
+  font-weight: lighter;
+  color: #3C3C3C;
+}
+
+#task-table td
+{
+  font-size: 18px;
+  height: 20px;
+  font-family: "Arial";
+}
+
+#task-table-task
+{
+  width: 30%;
+}
+
+#task-table td a, .back, .back a
+{
+  text-decoration: none;
+  color: #2f4f4f;
+}
+
+.back
+{
+  caption-side: bottom;
+  text-align: left;
+  padding-top: 10%;
+  font-size: 24px;
+}
+
+.back:hover
+{
+  text-decoration: none;
+  color: #7EC0EE;
+}
+
+/*Task ID*/
+.wrapper-task
+{
+  padding: 10% 28% 0% 28%
+}
+
+#task-title
+{
+  letter-spacing: 0.20em;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #3C3C3C;
+  outline: 0;
+  border-bottom: 1px dotted;
+}
+
+#task-description
+{
+  padding-bottom: 10%;
+  font-size: 18px;
+  font-family: "Arial";
+}
+
+/*New Task*/
+.enter-task
+{
+  font-size: 35px;
+  border-bottom: 1px dotted;
+}
+
+.enter-text, .enter-description
+{
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0;
+  background-color: transparent;
+  font-family: "Arial";
+  font-size: 16px;
+}
+
+.enter-text
+{
+  margin-bottom: 20px;
+}
+
+.enter-description
+{
+  height: 200px;
+}
+
+.enter-submit
+{
+  color: #a7a3a3;
+  font-size: 14px;
+  border: 0;
+  background-color: transparent;
+}
+
+.task-new
+{
+  padding-bottom: 10%;
+}
+
+.delete
+{
+  color: #a7a3a3;
+  font-size: 14px;
+  border: 0;
+  background-color: transparent;
+}
+
+label
+{
+ display:inline-block;
+ width: 140px;
+ text-align: right;
+}
+
+.wrapper-edit
+{
+  margin-left: -150px;
+}
+
+.enter-info
+{
+  border: 0;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px 0px red;
+}
+
+.robot
+{
+  height: 80px;
+}
+
+.robot-show
+{
+  padding-left: 25%;
+  padding-bottom: 5%;
+  height: 200px;
+}
+
+input[readonly],input:read-only, input[readonly="readonly"] {
+  border: 0;
+  background-color: transparent !important;
+  box-shadow: inset 0px 0px 0px 0px red;
+}
+
+.stats
+{
+  font-size: 16px;
+  padding-left: 20%;
+  padding-top: 7%;
+}
+
+.stats-table th, .stats-table td
+{
+  padding: 8px;
+}
+
+#total
+{
+  font-size:22px;
+  padding-left: 2%;
+}
